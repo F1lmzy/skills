@@ -1,0 +1,12 @@
+[package]
+name = "vowel-count"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dev-dependencies]
+criterion = { version = "=0.5.1", default-features = false }
+
+[[bench]]
+name = "vowels"
+harness = false

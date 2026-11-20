@@ -1,0 +1,8 @@
+bench = "vowels"
+editable = ["src/count.rs"]
+primary = "typical"
+protected = ["small", "large"]
+min_speedup = 1.2
+max_regression_pct = 3.0
+max_trials = 6
+rayon_threads = 1
