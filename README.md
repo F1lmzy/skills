@@ -1,14 +1,18 @@
 # Agent skills
 
-A collection of installable skills for AI coding agents (pi and any harness that loads skills from `.agents/skills/`).
+A collection of installable skills for AI coding agents (Pi and any harness that loads skills from `.agents/skills/`), plus Pi extensions.
 
 | Skill | Purpose |
 |-------|---------|
 | [rustperf](rustperf/) | Measured Rust optimization: frozen Criterion baseline, correctness gates, and a bounded series of experiments decided by the benchmark runner. |
 
+## Pi extensions
+
+- [BM25+ skill router](extensions/bm25-skill-router/) — automatically loads at most one matching skill in Pi 1.5.2. Follow its extension installation instructions; don't place it in `.agents/skills/`.
+
 ## Install a skill
 
-Each top-level folder is one self-contained skill. Its root holds a `SKILL.md` (the instructions your agent reads) plus any supporting files it needs. Install a skill by copying or symlinking its folder into your agent's skills directory — `.agents/skills/` under your home directory.
+Each top-level skill folder is self-contained. Its root holds a `SKILL.md` (the instructions your agent reads) plus any supporting files it needs. Install a skill by copying or symlinking its folder into your agent's skills directory — `.agents/skills/` under your home directory.
 
 **Linux / macOS**
 
